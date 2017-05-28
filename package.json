@@ -6,24 +6,33 @@
   "scripts": {
     "build": "gulp build",
     "lint": "gulp lint",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "test-watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "isomorphic-fetch": "^2.2.1"
+    "isomorphic-fetch": "^2.2.1",
+    "urijs": "^1.18.10"
   },
   "jest": {
     "moduleFileExtensions": [
-      "ts"
+      "ts",
+      "tsx",
+      "js",
+      "json"
     ],
     "transform": {
-      ".*": "<rootDir>/preprocessor.js"
+      "^.+\\.ts?$": "<rootDir>/preprocessor.js"
     },
     "testRegex": "/__tests__/.*\\.(ts|js)$"
   },
   "devDependencies": {
+    "@types/fetch-mock": "^5.8.2",
+    "@types/isomorphic-fetch": "0.0.34",
     "@types/jest": "^19.2.3",
+    "@types/urijs": "^1.15.32",
+    "fetch-mock": "^5.11.0",
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.1.0",
     "gulp-tslint": "^8.1.0",

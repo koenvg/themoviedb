@@ -7,6 +7,11 @@
       "never-prefix"
     ],
     "ordered-imports": false,
-    "object-literal-sort-keys": false
+    "object-literal-sort-keys": false,
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ]
   }
 }

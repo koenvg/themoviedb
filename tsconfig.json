@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "outDir": "./dist/",
     "module": "commonjs",
-    "target": "es5",
-    "declaration": true
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true
   },
-  "files": [
-    "./src/ts/search.ts"
+  "include": [
+    "src/ts/**/*"
   ]
 }
