@@ -1,0 +1,10 @@
+language: node_js
+install: 
+  - npm install
+  - npm run build
+  - npm run test
+deploy:
+  provider: npm
+  api_key: "YOUR_API_KEY"
+  on:
+    tags: true
