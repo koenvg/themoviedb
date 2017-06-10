@@ -1,3 +1,4 @@
+![build](https://travis-ci.org/koenvg/themoviedb.svg?branch=master)
 # themoviedb
 
 Javascript wrapper around themovieDB.
