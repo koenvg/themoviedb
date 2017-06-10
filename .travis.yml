@@ -8,6 +8,6 @@ script:
   - npm run test
 deploy:
   provider: npm
-  api_key: "YOUR_API_KEY"
+  api_key: NPM_API_KEY
   on:
     tags: true
