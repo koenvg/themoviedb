@@ -37,6 +37,7 @@
     "@types/fetch-mock": "^5.8.2",
     "@types/isomorphic-fetch": "0.0.34",
     "@types/jest": "^19.2.3",
+    "@types/node": "^7.0.29",
     "@types/urijs": "^1.15.32",
     "fetch-mock": "^5.11.0",
     "gulp": "^3.9.1",

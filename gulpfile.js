@@ -11,7 +11,8 @@ gulp.task("build", ['lint'], function () {
   return gulp.src(['src/ts/**/*.ts', '!src/ts/**/__tests__/*'])
     .pipe(plumber())
     .pipe(tsProject())
-    .pipe(gulp.dest("dist/"));
+    .on('error', function () { process.exit(1) })
+    .pipe(gulp.dest("dist/"))
 });
 
 gulp.task('lint', function () {
