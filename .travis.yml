@@ -8,7 +8,7 @@ script:
   - npm run test
 deploy:
   provider: npm
-  api_key: NPM_API_KEY
+  api_key: $NPM_API_KEY
   email: "koen.van.geert@gmail.com"
   on:
     tags: true
