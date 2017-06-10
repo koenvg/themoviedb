@@ -1,8 +1,8 @@
 import * as URI from 'urijs';
 import { getApiURL } from './constants';
-import { Pagination, TVShow } from '../types';
+import { TVShow } from '../types';
 
-export const fetchTVDetails = (TVID: string, apiKey: string) => {
+export const fetchTVDetails = (TVID: string, apiKey: string): Promise<TVShow> => {
   const url = getApiURL(apiKey)
     .segment('tv')
     .segment(TVID)
