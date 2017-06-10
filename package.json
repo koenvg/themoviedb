@@ -1,7 +1,7 @@
 {
   "name": "themoviedb-api",
-  "version": "1.0.0",
-  "description": "Javascript wrapper for themovieDB",
+  "version": "0.0.1",
+  "description": "Javascript wrapper for themovieDB. Can be used in node and browser side.",
   "main": "dist/index.js",
   "scripts": {
     "build": "gulp build",
