@@ -1,8 +1,8 @@
 import * as URI from 'urijs';
 import { getApiURL } from './constants';
-import { Pagination, Movie, TVShow } from '../types';
+import { Pagination, MovieResult, TVShowResult } from '../types';
 
-export const search = (query: string, apiKey: string): Promise<Pagination<Movie | TVShow>> => {
+export const search = (query: string, apiKey: string): Promise<Pagination<MovieResult | TVShowResult>> => {
   const url = getApiURL(apiKey)
     .segment('/search/multi')
     .addSearch('query', query)

@@ -1,5 +1,9 @@
+import { SearchResult } from './search';
 
-export interface Movie {
+export interface MovieResult extends MovieShort, SearchResult {
+}
+
+export interface MovieShort {
   poster_path?: string;
   adult: boolean;
   overview: string;
